@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="loader_size">50dp</dimen>
+    <dimen name="toolbar_title_margin">16dp</dimen>
+    <dimen name="logo_list_item_size">40dp</dimen>
+    <dimen name="logo_size_land">100dp</dimen>
+    <dimen name="card_view_margin">24dp</dimen>
+</resources>

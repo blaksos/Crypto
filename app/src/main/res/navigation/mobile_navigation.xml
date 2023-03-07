@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.lakhal.cryptoprice.ui.cryptoList.CryptoListFragment"
+        android:label="@string/title_list"
+        tools:layout="@layout/fragment_crypto_list">
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_crypto_details"
+            app:destination="@id/navigation_crypto_details"
+            app:launchSingleTop="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.lakhal.cryptoprice.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_crypto_details"
+        android:name="com.lakhal.cryptoprice.ui.cryptodetails.CryptoDetailsFragment"
+        android:label="@string/title_crypto_details"
+        tools:layout="@layout/fragment_crypto_details">
+        <argument
+            android:name="crypto_argument"
+            app:argType="com.lakhal.cryptoprice.data.CryptoMoney" />
+    </fragment>
+</navigation>

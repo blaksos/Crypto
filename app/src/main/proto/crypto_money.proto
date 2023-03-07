@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_package = "com.lakhal.cryptoprice";
+option java_multiple_files = true;
+
+message CryptoMoneyProto {
+  // Name of the crypto money.
+  string name = 1;
+  // Symbol of the crypto money.
+  string symbol = 2;
+  // Logo resource Id of the crypto money.
+  sint32 logoResId = 3;
+}
+
+message CryptoMoneyListProto {
+  repeated CryptoMoneyProto data = 1;
+}
+
+message SettingsProto {
+  int64 modificationDate = 1;
+}
